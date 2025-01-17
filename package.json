@@ -6,20 +6,62 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@mantine/core": "^7.16.0",
+    "@mantine/hooks": "^7.16.0",
+    "@mantine/tiptap": "^7.16.0",
+    "@next/swc-darwin-arm64": "latest",
+    "@next/swc-darwin-x64": "latest",
+    "@next/swc-linux-arm64-gnu": "latest",
+    "@next/swc-linux-arm64-musl": "latest",
+    "@next/swc-linux-x64-gnu": "latest",
+    "@next/swc-linux-x64-musl": "latest",
+    "@next/swc-win32-arm64-msvc": "latest",
+    "@next/swc-win32-ia32-msvc": "latest",
+    "@next/swc-win32-x64-msvc": "latest",
+    "@prisma/client": "^6.2.1",
+    "@stylistic/eslint-plugin": "^2.13.0",
+    "@tiptap/extension-link": "^2.11.2",
+    "@tiptap/pm": "^2.11.2",
+    "@tiptap/react": "^2.11.2",
+    "@tiptap/starter-kit": "^2.11.2",
+    "googleapis": "^144.0.0",
+    "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.5"
+    "react-hook-form": "^7.54.2"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@eslint/eslintrc": "^3.2.0",
+    "@mantine/vanilla-extract": "^7.16.0",
+    "@next/eslint-plugin-next": "^15.1.5",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.18.0",
+    "eslint-config-mantine": "^4.0.3",
     "eslint-config-next": "15.1.5",
-    "@eslint/eslintrc": "^3"
-  }
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "next-auth": "^4.24.11",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "packageManager": "yarn@4.6.0"
 }
