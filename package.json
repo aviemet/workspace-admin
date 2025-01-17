@@ -52,6 +52,7 @@
     "eslint-config-next": "15.1.5",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
+    "husky": "^9.1.7",
     "next-auth": "^4.24.11",
     "postcss-preset-mantine": "^1.17.0",
     "postcss-simple-vars": "^7.0.1",
@@ -61,6 +62,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   },
   "packageManager": "yarn@4.6.0"
